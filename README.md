@@ -1,2 +1,2 @@
-# personal-web
+# Personal Web
 Personal Web Template for Hugo

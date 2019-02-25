@@ -3,19 +3,13 @@
 
 name = "Personal_web"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+licenselink = "https://github.com/bjacquemet/personal-web/blob/master/LICENSE"
+description = "Peronal Web is a template for freelancers including portfolio and blog sections"
 homepage = "http://example.com/"
-tags = []
+tags = ["portfolio", "blog", "post", "personal"]
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Baptiste Jacquemet"
+  homepage = "https://baptistej.com"
