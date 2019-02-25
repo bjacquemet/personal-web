@@ -1,0 +1,39 @@
+{{ if .Params.designs }}
+  <div class="designs portfolio-tags">
+    {{ partial "svg" (dict "iconName" "pencil" "size" "18px")}}
+    {{ range $i, $e := .Params.designs }}
+      <span>
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "designs/%s" ( urlize .)) -}}
+          {{- if $i -}}<span>- </span>{{ end }}
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+      </span>
+    {{ end }}
+  </div>
+{{end}}
+
+{{ if .Params.techs }}
+  <div class="techs portfolio-tags">
+    {{ partial "svg" (dict "iconName" "tech" "size" "18px")}}
+    <span>
+      {{ range $i, $e := .Params.techs }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "techs/%s" ( urlize .)) -}}
+          {{- if $i -}}<span>- </span>{{ end }}
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+      {{ end }}
+    </span>
+  </div>
+{{ end }}
+
+{{ if .Params.projectUrl }}
+  <div class="portfolio-tags">
+    {{ partial "svg" (dict "iconName" "hyperlink" "size" "18px")}}
+    <a target="_blank" href="{{.Params.projectUrl}}">{{.Params.projectUrl}}</a>
+  </div>
+{{ end }}
+
+<div class="portfolio-tags">
+  {{ partial "svg" (dict "iconName" "calendar" "size" "18px")}}
+  <span>{{ .Params.jobDate }}</span>
+</div>

@@ -1,0 +1,9 @@
+{{ $variables := resources.Get "sass/_variables.sass" }}
+{{ $scaffold := resources.Get "sass/scaffold.sass" }}
+{{ $custom := resources.Get "sass/custom.sass" }}
+{{ $style := slice $variables $scaffold $custom | resources.Concat "sass/style.sass" | toCSS | minify | fingerprint }}
+
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+{{ if .Site.Params.assets.customCSS }}
+  <link rel="stylesheet" href="{{ .Site.Params.assets.customCSS }}" media="screen">
+{{ end }}

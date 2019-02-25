@@ -1,0 +1,8 @@
+{{ partial "header" .}}
+
+<h2>{{ .Data.Term | humanize }}</h2>
+{{ range .Data.Pages }}
+    {{ partial "portfolio/item" .}}
+{{ end }}
+
+{{ partial "footer" .}}

@@ -1,0 +1,10 @@
+{{ partial "header" .}}
+
+  <h1 id="title"> {{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ range .Pages.ByDate.Reverse }}
+    {{ partial "portfolio/item" .}}
+  {{ end }}
+
+{{ partial "footer" .}}

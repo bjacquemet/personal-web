@@ -1,0 +1,12 @@
+{{ partial "header" .}}
+
+  {{ .Content }}
+  <ul id="all-tags">
+    {{ range $name, $taxonomy := .Site.Taxonomies.techs }}
+        {{ with $.Site.GetPage (printf "/techs/%s" $name) }}
+            <li><a href="{{ .Permalink }}">{{ $name | humanize }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+
+{{ partial "footer" .}}

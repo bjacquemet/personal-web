@@ -1,0 +1,11 @@
+{{ partial "header" .}}
+
+  <h1 id="title"> {{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  <ul id="list">
+    {{ range .Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </ul>
+
+{{ partial "footer" .}}

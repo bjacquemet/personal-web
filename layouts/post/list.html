@@ -1,0 +1,12 @@
+{{ partial "header" .}}
+
+  <h1 id="title"> {{ .Title }}</h1>
+  {{ .Content }}
+
+  <div class="post-list">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      {{ partial "post/item" .}}
+    {{ end }}
+  </div>
+
+{{ partial "footer" .}}

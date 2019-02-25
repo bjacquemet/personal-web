@@ -1,0 +1,185 @@
+.small
+  font-size: $font-size_small
+
+.active
+  font-weight: 500
+
+
+#content, header
+  .icon
+    margin-right: 5px
+    display: inline-block
+    svg
+      width: auto
+
+header
+  .icon
+    fill: white
+    margin-right: 10px
+#content
+  .icon
+    fill: $dark-blue
+
+#content:not(.portfolio)
+  img
+    width: 110%
+    display: block
+    margin: 0 -5%
+
+
+.published-date, .reading-time
+  display: inline-block
+  margin-bottom: 20px
+
+.reading-time
+  margin-right: 20px
+
+.img-caption
+  margin-bottom: $margin-blocks/6 !important
+
+.portfolio
+  img
+    max-width: 100%
+    margin-bottom: $margin-blocks
+    box-shadow: $box-shadow
+
+  .rounded-img
+    +rounded
+
+  .testimonial-list
+    margin: 0 auto
+    display: flex
+
+    .testimonial-container
+      display: inline-block
+      text-align: center
+
+      .testimonial-name, .testimonial-role
+        text-align: center
+        font-weight: $font-weight_h1
+        font-size: $font-size_main_large
+        margin-top: -2/3*$margin-blocks
+      .testimonial-role
+        font-weight: $font-weight_main
+
+      .testimonial-text
+        position: relative
+        z-index: 0
+
+
+  .portfolio-tags
+    margin-top: $margin-blocks/5
+    span
+      font-weight: $font-weight_h1
+    a
+      overflow-wrap: break-word
+  .tags
+    margin-bottom: $margin-blocks/3
+
+#content
+  .portfolio-list
+    h2
+      margin: 0
+
+    a, a:hover, a:link, a:active, a:visited, a:focus
+      border-bottom: none
+      color: inherit
+
+    img
+      max-width: 100%
+      border-radius: 2px
+      display: block
+      box-shadow: $box-shadow
+      margin: inherit
+
+    .portfolio-container
+      position: relative
+      max-width: $max-width-content
+      margin-bottom: $margin-blocks
+
+      .portfolio-details
+        opacity: 0
+        display: none
+        width: 100%
+        padding: 2em 1em
+        color: $primary-color
+        +transition(opacity 0.4s ease)
+
+        p, h2
+          text-align: center
+          margin-bottom: 0
+          position: relative
+
+
+      .img-overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+        +transition(0.4s ease)
+        background-color: $dark-blue
+
+      &:hover
+        .img-overlay
+          opacity: 0.7
+
+        .portfolio-details
+          opacity: 1
+          display: block
+          position: absolute
+          top: 50%
+          left: 50%
+          +transform(translate(-50%, -50%))
+
+    img::hover
+      linear-gradient: $dark-blue, $dark-blue
+
+    .portfolio-container
+      +smartphone
+        img
+          margin-bottom: 0
+
+        .img-overlay
+          display: none
+
+        .portfolio-details
+          display: block
+          opacity: 1
+          width: 100%
+          padding: 0px
+          color: $grey-900
+
+          h2
+            font-size: $font-size_h3
+            line-height: $line-height_main
+
+            span
+              background-image: linear-gradient(180deg, transparent 60%, $primary-color 0)
+              padding: 0 0.2em
+
+          p, h2
+            text-align: center
+            margin-bottom: 0
+            position: relative
+
+        &:hover
+          .portfolio-details
+            +transform(none)
+            position: relative
+            left: 0
+
+
+.designs, .techs
+  display: inline-block
+
+.designs
+  margin-right: 20px
+
+.read-more
+  margin-top: -$margin-blocks/3
+  text-align: right
+  display: block

@@ -1,0 +1,14 @@
+{{ partial "header" .}}
+
+<h1>{{ .Title | markdownify }}</h1>
+{{ .Content }}
+
+<h2>My Latest Job</h2>
+  {{ $pages := where site.RegularPages "Type" "in" "portfolio"}}
+  {{ range first 1 $pages }}
+    <div class="portfolio-list">
+      {{ partial "portfolio/item" .}}
+    </div>
+  {{ end }}
+
+{{ partial "footer" .}}

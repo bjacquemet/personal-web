@@ -1,0 +1,29 @@
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+=transition($transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -ms-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+
+// MEDIA QUERIES
+=smartphone
+  @media (max-width: #{$tablet-width - 1px})
+    @content
+
+=tablet
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})
+    @content
+
+=desktop
+  @media (min-width: #{$desktop-width})
+    @content
+
+=rounded
+  width: 150px
+  height: 150px
+  border-radius: 50%

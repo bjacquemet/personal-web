@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.Language.Lang }}'>
+{{- partial "head/head" . -}}
+
+<body>
+
+  {{ partialCached "sidebar/sidebar" .}}
+
+  <div class="content-wrapper">
+    {{ if .Site.Params.breadcrumb }}
+      {{ partial "breadcrumb" .}}
+    {{ end }}
+    <main id="content" class="{{ .Section }}">

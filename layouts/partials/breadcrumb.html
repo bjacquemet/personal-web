@@ -1,0 +1,14 @@
+<div class="breadcrumb">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</div>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<span {{ if eq .p1 .p2 }} class="active"{{ end }}>
+  <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
+  {{ if ne .p1 .p2 }} / {{ end }}
+</span>
+{{ end }}

@@ -1,0 +1,8 @@
+<head>
+  <title>{{.Params.title}} - {{ $.Site.Title}}</title>
+  <link rel='canonical' href='{{ .Permalink }}' />
+  {{ partial "head/meta" .}}
+  {{ partial "head/style" .}}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/schema.html" . }}
+</head>

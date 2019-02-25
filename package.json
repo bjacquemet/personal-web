@@ -1,0 +1,12 @@
+{
+  "name": "personal_web",
+  "description": "Simple Personal website theme for Hugo",
+  "version": "0.0.1",
+  "author": {
+    "name": "Baptiste Jacquemet",
+    "url": "https://baptistej.com"
+  },
+  "repository": "bjacquemet/personal_web",
+  "license": "MIT",
+  "dependencies": {}
+}

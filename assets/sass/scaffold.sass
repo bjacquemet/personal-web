@@ -1,0 +1,245 @@
+@import 'variables'
+@import 'mixins'
+
+*
+  box-sizing: border-box
+
+html
+  background-color: $primary-color
+
+body
+  background-color: white
+  margin: 0
+  min-height: 100%
+  font-family: $font-family_main
+  color: $dark-blue
+  font-size: $font-size_main
+
+  +smartphone
+    line-height: $line-height_main_mobile
+
+ul
+  margin-top: -$margin-blocks/2
+
+li
+  line-height: $line-height_main
+
+p::selection
+  background-color: $grey-300
+  color: $grey-900
+
+p
+  display: block
+  font-weight: $font-weight_main
+  font-size: 1em
+  margin-top: 0
+  margin-bottom: $margin-blocks/2
+  line-height: $line-height_main
+  text-align: justify
+
+h1, h2, h3, h4, h5
+  font-family: $font-family_header
+  letter-spacing: $letter-spacing_header
+  margin-bottom: $margin-blocks/3
+  margin-top: $margin-blocks
+  line-height: $line-height_h
+
+h1
+  font-size: $font-size_h1
+  font-weight: $font-weight_h1
+h2
+  font-size: $font-size_h2
+  font-weight: $font-weight_h2
+h3
+  font-size: $font-size_h3
+  font-weight: $font-weight_h3
+h4
+  font-size: $font-size_h4
+  font-weight: $font-weight_h4
+
+blockquote
+  margin: 0 $margin-blocks/6
+  font-size: 1em
+  line-height: $line-height_main
+  text-align: justify
+  font-style: italic
+  &:before
+    font-family: Georgia, serif
+    content: '\201C'
+    position: absolute
+    top: 0.15em
+    left: -0.18em
+    color: $grey-400
+    font-size: 7em
+    z-index: -1
+    font-style: italic
+
+header, #content
+  height: 100%
+
+figure
+  margin: 0
+  img
+    margin-bottom: $margin-blocks/5 !important
+  figcaption
+    p
+      font-size: $font-size_medium
+      text-align: center
+
+header
+  width: $sidebar-width
+  background-size: cover
+  background-position: top center
+  position: fixed
+  color: $grey-100
+
+  h2
+    font-size: $font-size_h1
+    font-weight: $font-weight_h1
+
+  .menu
+    text-align: left
+    p
+      margin-bottom: 0px
+
+  .socials
+    padding: $padding-content
+    bottom: 0px
+    position: fixed
+    border: 0
+
+    .social-link a, a:visited, a:focus, a:active
+      svg
+        fill: white
+
+    .social-link a:focus, a:active, a:hover
+      svg
+        +transition(fill 0.7s)
+        fill: $grey-500
+
+  a, a:link, a:visited
+    color: white
+    border-bottom: 0
+    font-weight: $font-weight_main
+    +transition(all 0.25s)
+    line-height: $line-height_menu
+    &:not(.social-link)
+      border-bottom: $grey-100 1px dashed
+
+  a:hover, a:focus, a:active
+    font-weight: $font-weight_h1
+    color: $secondary-color
+    &:not(.social-link)
+      border-bottom: $grey-100 1px dashed
+
+  .intro
+    padding: $padding-content
+    position: absolute
+    bottom: 100px
+
+  .rounded-logo
+    +rounded
+    margin-bottom: 4/3*$margin-blocks
+    display: block
+    box-shadow: $box-shadow
+
+  +tablet
+    width: $sidebar-width-tablet
+
+  +smartphone
+    position: relative
+    width: 100%
+    background: $dark-blue !important
+    display: block
+    height: auto
+    p
+      padding-top: $margin-blocks/3
+
+    .socials
+      padding: $padding-content_mobile
+      position: relative
+
+    .rounded-logo
+      text-align: center
+      margin: 0 auto
+
+    .intro
+      bottom: inherit
+      display: block
+      position: relative
+
+#content, .breadcrumb
+  max-width: $max-width-content
+  margin: 0 auto
+  display: block
+
+a
+  line-height: $line-height_main+0.1
+
+a, a:visited, a:link
+  text-decoration: none
+  color: inherit
+  font-weight: 600
+  border-bottom: $grey-600 1px dashed
+  padding-bottom: 1px
+  +transition(all 0.2s)
+  svg
+    fill: inherit
+    +transition(all 0.2s)
+
+a:hover, a:focus, a:active
+  color: $secondary-color
+  text-decoration: none
+  font-weight: 600
+  border-bottom: $grey-600 1px dashed
+  padding-bottom: 1px
+  svg
+    fill: $secondary-color
+
+.content-wrapper
+  padding: $padding-content
+  position: static
+  width: $content-width
+  margin-left: $sidebar-width
+  float: none
+  clear: none
+  display: block
+  min-height: 88vh
+
+  +tablet
+    width: $content-width-tablet
+    margin-left: $sidebar-width-tablet
+
+  +smartphone
+    position: relative
+    width: 100%
+    margin-left: 0
+
+footer
+  position: absolute
+  width: $content-width
+  left: $sidebar-width
+  background-color: $footer-background-color
+  color: $grey-100
+  padding: $padding-content
+
+  .footer-wrapper
+    max-width: $max-width-content
+    margin: 0 auto
+    display: block
+
+  +tablet
+    width: $content-width-tablet
+    left: $sidebar-width-tablet
+
+  +smartphone
+    position: relative
+    width: 100%
+    left: 0px
+
+  p
+    margin-bottom: 0
+
+.gopher
+  margin: 0 auto $margin-blocks !important
+
