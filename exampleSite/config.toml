@@ -35,9 +35,9 @@ enableRobotsTXT=true
   portfolio = "project"
 
 [params.sidebar]
-  backgroundImage = '' #header background image - default "/images/default_sidebar.jpg"
-  gradientOverlay = 'rgba(0,0,0,0.4),rgba(0,0,0,0.4)' #default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "/images/edna-west.jpg"
+  backgroundImage = '' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+  logo = "" # - default "/images/edna-west.jpg"
 [params.assets]
   favicon = ""
   customCSS = ""
@@ -49,7 +49,7 @@ enableRobotsTXT=true
 
 [params.contact]
   email = ""
-  text= "Say Hello!" # text of the contact link in the sidebar. If email params.contact.email is defined
+  text= "" # text of the contact link in the sidebar. If email params.contact.email is defined
 
 
 [menu]
