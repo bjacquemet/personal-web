@@ -5,7 +5,7 @@ date: "2019-05-02T19:49:05+02:00"
 publishDate: "2019-05-02T19:49:05+02:00"
 ---
 
-A portfolio
+Here are some details about the portfolio settings.
 
 {{< figure src="/post/images/portfolio-example.png" caption="Example of Portfolio page" >}}
 
