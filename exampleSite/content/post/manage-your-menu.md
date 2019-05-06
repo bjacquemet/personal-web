@@ -1,5 +1,6 @@
 ---
 title: "Manage Your Menu"
+description: Define a sidebar menu
 date: 2019-05-02T19:06:29+02:00
 draft: true
 ---

@@ -1,18 +1,31 @@
 ---
-title: "Shortcodes"
-date: 2019-04-19T16:18:12+01:00
-publishDate: 2019-04-19T19:12:12+01:00
+title: Shortcodes
+description: Exaplanation on the shortcodes with personal_web
+date: 2019-04-29T16:18:12+01:00
+publishDate: 2019-04-29T19:12:12+01:00
 ---
 
-Introduction of the shortcodes
+Introduction of the shortcodes defined in the personal_web theme.
 
 <!--more-->
 
-## Figure
-check it
-{{< figure src="/post/images/banner_etc.jpg" caption="Will you take the challenge?!">}}
+## Add a figure
+{{</* figure src="/post/images/sample_image.jpg" caption="Photo by Tim Mossholder on Unsplash" */>}}
+
+results in
+
+{{< figure src="/post/images/sample_image.jpg" caption="Photo by Tim Mossholder on Unsplash" >}}
+
+**Note:** files are kept in a `images` folder, directly in the post/portfolio folder.
 
 
-## Tweet Single
-{{< tweet-single 1072826999562035200 >}}
+## Add a single Tweet
+{{</* tweet-single 1120412132036706305 */>}}
 
+results in
+{{< tweet-single 1120412132036706305 >}}
+
+This shortcode is useful in case of multiple tweets in a thread. If you want to show a single tweet, use this shortcode, with the ID of the Tweet. The ID is the end of the tweet link.
+
+For example: \
+https://<span></span>twitter.com/BarackObama/status/**1120412132036706305**

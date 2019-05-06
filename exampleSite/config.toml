@@ -6,6 +6,8 @@ copyright="© Edna West"
 googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
 
 [params.intro]
   main = "Hi, I'm Edna :wave:"
@@ -43,9 +45,9 @@ enableRobotsTXT=true
   customCSS = ""
 
 [params.social]
-  github = "https://github.com/bjacquemet"
-  twitter = "https://twitter.com/jacquemetb"
-  linkedin = "https://www.linkedin.com/in/baptistej"
+  github = "https://github.com/"
+  twitter = "https://twitter.com/"
+  linkedin = "https://www.linkedin.com/in/"
 
 [params.contact]
   email = ""
