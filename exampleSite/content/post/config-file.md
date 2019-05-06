@@ -5,7 +5,7 @@ date: 2019-04-20T16:18:12+01:00
 publishDate: 2019-04-20T19:12:12+01:00
 ---
 
-Here is the basic config file used for personal_web.
+Here is the basic config file used for personal-web.
 
 You can use it as a base for your website.
 
@@ -15,7 +15,7 @@ You can use it as a base for your website.
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Edna West"
-theme = "personal_web"
+theme = "personal-web"
 copyright="© Edna West"
 googleAnalytics = ""
 enableEmoji=true

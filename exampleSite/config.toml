@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Edna West"
-theme = "personal_web"
+theme = "personal-web"
 copyright="© Edna West"
 googleAnalytics = ""
 enableEmoji=true

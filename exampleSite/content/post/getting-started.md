@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: Getting started with personal_web
+description: Getting started with personal-web
 date: "2019-05-03T09:37:55+02:00"
 publishDate: "2019-05-03T09:37:55+02:00"
 ---

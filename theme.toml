@@ -1,11 +1,11 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Personal_web"
+name = "Personal Web"
 license = "MIT"
 licenselink = "https://github.com/bjacquemet/personal-web/blob/master/LICENSE"
 description = "Personal Web is a simple Hugo template to build a personal website including portfolio and blog sections. It will mainly suit freelancers who want to showcase their work."
-homepage = "http://example.com/"
+homepage = "https://personal-web-example.netlify.com/"
 tags = ["portfolio", "blog", "post", "personal", "freelancer", "developer"]
 features = []
 min_version = "0.41"
