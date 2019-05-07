@@ -23,9 +23,9 @@ For more information read the official [setup guide](https://gohugo.io/getting-s
 ## Screenshots
 
 
-![Home](https://raw.githubusercontent.com/bjacquemet/personal-web-example/master/images/screenshot.png)
-![Portfolio](https://raw.githubusercontent.com/bjacquemet/personal-web-example/master/images/tn.png)
-![Article](https://raw.githubusercontent.com/bjacquemet/personal-web-example/master/images/post.png)
+![Home](https://raw.githubusercontent.com/bjacquemet/personal-web/master/images/screenshot.png)
+![Portfolio](https://raw.githubusercontent.com/bjacquemet/personal-web/master/images/tn.png)
+![Article](https://raw.githubusercontent.com/bjacquemet/personal-web/master/images/post.png)
 
 
 
