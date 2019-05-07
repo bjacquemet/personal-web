@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: Getting started with personal_web
+description: Getting started with personal-web
 date: "2019-05-03T09:37:55+02:00"
 publishDate: "2019-05-03T09:37:55+02:00"
 ---
@@ -9,7 +9,7 @@ Here are some details to help you getting started with this theme.
 
 <!--more-->
 
-We'll assume here that you have a good understanding of Hugo and its structure. If you have any doubt, check the [Hugo documentation](https://gohugo.io/documentation/ "Hugo documentation"); it is pretty good and the community quite active! (thanks so much by the way! :muscle:)
+We'll assume here that you have a good understanding of Hugo and its structure. If you have any doubt, check the [Hugo documentation](https://gohugo.io/documentation/ "Hugo documentation"); it is pretty good and the community quite active! Thank you so much by the way! :muscle:
 
 The first thing to do when starting your own website is to **copy the content of exampleSite** in your own root folder. This way, you can have a sample of `config.toml` file and a first structure.
 

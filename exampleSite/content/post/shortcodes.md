@@ -10,7 +10,9 @@ Introduction of the shortcodes defined in the personal-web theme.
 <!--more-->
 
 ## Add a figure
+```go-html-template
 {{</* figure src="/post/images/sample_image.jpg" caption="Photo by Tim Mossholder on Unsplash" */>}}
+```
 
 results in
 
@@ -20,7 +22,9 @@ results in
 
 
 ## Add a single Tweet
+```go-html-template
 {{</* tweet-single 1120412132036706305 */>}}
+```
 
 results in
 {{< tweet-single 1120412132036706305 >}}
