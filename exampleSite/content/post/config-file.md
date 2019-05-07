@@ -37,12 +37,12 @@ pygmentsCodeFences=true
 [params]
   breadcrumb = true
   accentColor = "#FD3519"
+  mainSections = ['portfolio']
 
 [params.notFound]
   gopher = "/images/gopher.png"
   h1 = 'Bummer!'
   p = "It seems that this page doesn't exist."
-  mainSection = 'portfolio'
 
 [params.sections]
   post = "article"
@@ -129,7 +129,9 @@ You can also customize the params with the  `params.sidebar` parameters. The `co
 ## 404
 
 The 404 page is defined within the `params.notFound` section.
-The `gopher`, `h1` and `p` params define the image and texts displayed on the page. The `mainSection` params possible values are 'portfolio' or 'post': it defines the section highlighted on the page.
+The `gopher`, `h1` and `p` params define the image and texts displayed on the page. 
+
+In the `[params]` section, the `mainSections` params possible values are 'portfolio' or 'post': it defines the section highlighted on the page.
 
 NB: to see the 404 page from your development env, check `/404.html`.
 
@@ -138,7 +140,9 @@ NB: to see the 404 page from your development env, check `/404.html`.
   gopher = "/images/gopher.png"
   h1 = 'Bummer!'
   p = "It seems that this page doesn't exist."
-  mainSection = 'portfolio'
+
+[params]
+  mainSections = ['portfolio']
 ```
 
 You can also define how the post and portfolio sections will be named on the 404 page, thanks to the `params.sections` params.
