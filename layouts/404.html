@@ -4,19 +4,23 @@
 <p>{{ .Site.Params.notFound.p }}</p>
 <img src="{{ .Site.Params.notFound.gopher }}" alt="gopher" title="gopher" class="gopher" />
 
-{{ if .Site.Params.notFound.mainSection }}
+{{ if .Site.Params.mainSections }}
   {{ $scratch := newScratch }}
-  {{ if eq .Site.Params.notFound.mainSection "portfolio" }}
+  {{ if in .Site.Params.mainSections "portfolio" }}
     {{ $scratch.Set "section" .Site.Params.sections.portfolio }}
   {{ else }}
     {{ $scratch.Set "section" (.Site.Params.sections.post) }}
   {{ end }}
 
   <p>While you're here, you can check out my last {{ $scratch.Get "section" }}:</p>
-  {{ $pages := where site.RegularPages.ByPublishDate.Reverse "Type" "in" .Site.Params.notFound.mainSection }}
+  {{ $pages := where site.RegularPages "Type" "in" .Site.Params.mainSections }}
   {{ range first 1 $pages }}
-    {{ partial (printf "%s/item.html" .Site.Params.notFound.mainSection) . }}
-  {{end}}
+    {{ if in .Site.Params.mainSections "portfolio" }}
+      {{ partial "portfolio/item" .}}
+    {{ else if in .Site.Params.mainSections "post" }}
+      {{ partial "post/item" .}}
+    {{ end }}
+  {{ end }}
 {{end}}
 
 {{ partial "footer" .}}
