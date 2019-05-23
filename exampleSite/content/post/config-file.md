@@ -61,6 +61,12 @@ pygmentsCodeFences=true
   github = "https://github.com/"
   twitter = "https://twitter.com/"
   linkedin = "https://www.linkedin.com/in/"
+  medium = "https://medium.com/"
+  codepen = "https://codepen.io/"
+  facebook = "https://www.facebook.com/"
+  youtube = "https://www.youtube.com/"
+  instagram = "https://www.instagram.com/"
+  gitlab = "https://gitlab.com/"
 
 [params.contact]
   email = ""
@@ -173,6 +179,12 @@ In this last section, the email expects your email address and the text is what 
   github = "https://github.com/"
   twitter = "https://twitter.com/"
   linkedin = "https://www.linkedin.com/in/"
+  medium = "https://medium.com/"
+  codepen = "https://codepen.io/"
+  facebook = "https://www.facebook.com/"
+  youtube = "https://www.youtube.com/"
+  instagram = "https://www.instagram.com/"
+  gitlab = "https://gitlab.com/"
 
 [params.contact]
   email = ""

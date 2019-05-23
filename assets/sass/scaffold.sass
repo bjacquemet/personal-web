@@ -107,6 +107,7 @@ header
     bottom: 0px
     position: fixed
     border: 0
+    max-width: $sidebar-width
 
     .social-link a, a:visited, a:focus, a:active
       svg
@@ -127,15 +128,15 @@ header
       border-bottom: $grey-100 1px dashed
 
   a:hover, a:focus, a:active
-    font-weight: $font-weight_h1
     color: $secondary-color
     &:not(.social-link)
+      font-weight: $font-weight_h1
       border-bottom: $grey-100 1px dashed
 
   .intro
     padding: $padding-content
     position: absolute
-    bottom: 100px
+    bottom: 140px
 
   .rounded-logo
     +rounded
@@ -145,6 +146,12 @@ header
 
   +tablet
     width: $sidebar-width-tablet
+
+    .intro
+      bottom: 150px
+
+    .socials
+      max-width: $sidebar-width-tablet
 
   +smartphone
     position: relative
@@ -158,6 +165,7 @@ header
     .socials
       padding: $padding-content_mobile
       position: relative
+      max-width: inherit
 
     .rounded-logo
       text-align: center
