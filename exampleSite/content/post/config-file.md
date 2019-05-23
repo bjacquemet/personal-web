@@ -67,6 +67,7 @@ pygmentsCodeFences=true
   youtube = "https://www.youtube.com/"
   instagram = "https://www.instagram.com/"
   gitlab = "https://gitlab.com/"
+  keybase = "https://keybase.io/"
 
 [params.contact]
   email = ""
@@ -185,6 +186,7 @@ In this last section, the email expects your email address and the text is what 
   youtube = "https://www.youtube.com/"
   instagram = "https://www.instagram.com/"
   gitlab = "https://gitlab.com/"
+  keybase = "https://keybase.io/"
 
 [params.contact]
   email = ""
