@@ -32,6 +32,13 @@ For more information read the official [setup guide](https://gohugo.io/getting-s
 ## Start building your website
 You will find help in the `exampleSite` folder, or you can browse resources on the [demo site](https://personal-web-example.netlify.com/post/)
 
+## Add a SVG icon
+You can create and add your own SVG icons.
+
+First, override the `svg.html` file by duplicating the theme file into your root directory (see https://orcid.org/trademark-and-id-display-guidelines).
+
+If you have Sketch, you can use the `svgs.sketch` file to add new SVGs. Export it and add it to the `svg.html` file. Note that you can  optimize it using the `svgo` tool.
+
 ## Start the server
 
 In order to see your site in action, run Hugo's built-in local server from your website root directory.
