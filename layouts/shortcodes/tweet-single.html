@@ -3,7 +3,8 @@
 {{- if $pc.Simple -}}
 {{ template "_internal/shortcodes/twitter_simple.html" . }}
 {{- else -}}
-{{- $url := printf "https://api.twitter.com/1/statuses/oembed.json?hide_thread=1&id=%s&dnt=%t" (index .Params 0) $pc.EnableDNT -}}
+{{- $tweetID := print (index .Params 0) -}}
+{{- $url := printf "https://api.twitter.com/1/statuses/oembed.json?hide_thread=1&id=%s&dnt=%t" $tweetID $pc.EnableDNT -}}
 {{- $json := getJSON $url -}}
 {{ $json.html | safeHTML }}
 {{- end -}}
