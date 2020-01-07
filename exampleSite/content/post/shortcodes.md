@@ -11,7 +11,8 @@ Introduction of the shortcodes defined in the personal-web theme.
 
 ## Add a figure
 ```go-html-template
-{{</* figure src="/post/images/sample_image.jpg" caption="Photo by Tim Mossholder on Unsplash" */>}}
+{{</* figure src="/post/images/sample_image.jpg" 
+caption="Photo by Tim Mossholder on Unsplash" */>}}
 ```
 
 results in
