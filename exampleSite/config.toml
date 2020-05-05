@@ -13,6 +13,9 @@ pygmentsCodeFences=true
   main = "Hi, I'm Edna :wave:"
   sub = "I'm a Web Developer and Entrepreneur"
 
+[params.main]
+  latestPublishHeader = "My Latest Project"
+
 [taxonomies]
   design = "designs"
   tech = "techs"
