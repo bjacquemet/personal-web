@@ -3,7 +3,7 @@
 <h1>{{ .Title | markdownify }}</h1>
 {{ .Content }}
 
-<h2>My Latest Job</h2>
+<h2>{{ .Site.Params.main.latestPublishHeader | default "My Latest Job" }}</h2>
   {{ $pages := where site.RegularPages "Type" "in" .Site.Params.mainSections }}
   {{ range first 1 $pages }}
     {{ if in .Site.Params.mainSections "portfolio" }}

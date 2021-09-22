@@ -27,6 +27,9 @@ pygmentsCodeFences=true
   main = "Hi, I'm Edna :wave:"
   sub = "I'm a Web Developer and Entrepreneur"
 
+[params.main]
+  latestPublishHeader = "My Latest Project"
+
 [taxonomies]
   design = "designs"
   tech = "techs"
@@ -191,4 +194,12 @@ In this last section, the email expects your email address and the text is what 
 [params.contact]
   email = ""
   text= ""
+```
+
+## Latest Publication
+You can define the name of the latest publication header on the home page with the param `latestPublishHeader`.
+
+```TOML
+[params.main]
+  latestPublishHeader = "My Latest Project"
 ```
