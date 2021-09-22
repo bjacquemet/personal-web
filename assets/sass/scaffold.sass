@@ -252,3 +252,73 @@ img.gopher
   margin: 0 auto $margin-blocks !important
   max-width: 200px
 
+// MOBILE ONLY
+
++desktop
+  .overlay-menu, .mobile-menu, .hamburger
+    display: none
+
++tablet
+  .overlay-menu, .mobile-menu, .hamburger
+    display: none
+
++smartphone
+  .mobile-header
+    padding: $padding-mobile-header
+    background: $dark-blue
+    color: $grey-100
+    
+    p
+      font-size: $font-size_h2
+      text-align: center
+      margin: 0
+  header
+    display: none
+  .overlay-menu, .mobile-menu
+    display: block
+  .mobile-menu
+    display: flex
+    height: 100vh
+    align-items: center
+    justify-content: center
+
+  .overlay-menu
+    display: none
+    +transition(all 0.3s)
+    background: $dark-blue !important
+    width: 0%
+    height: 0vh
+    position: absolute
+    top: 0
+    z-index: 1
+
+    header
+      display: block
+
+  .hamburger
+    cursor: pointer
+    position: absolute
+    top: 30px
+    left: 16px
+    display: block
+    z-index: 100
+
+    .bar
+      width: 22px
+      height: 2px
+      background-color: $grey-100
+      margin-bottom: 5px
+      position: relative
+      +transition(all 0.2s)
+    &.cross .bar
+      transform-origin: 50% 50%
+      &:nth-child(1)
+        +transform(rotate(45deg))
+        top: 7px
+      &:nth-child(3)
+        +transform(rotate(-45deg))
+      &:nth-child(2)
+        display: none
+
+
+// MOBILE ONLY END
