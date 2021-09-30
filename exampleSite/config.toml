@@ -102,3 +102,8 @@ pygmentsCodeFences=true
     disable = false
     enableDNT = true
     simple = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
