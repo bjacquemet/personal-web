@@ -1,6 +1,12 @@
 {{ partial "header" .}}
 
-<h1>{{ .Title | markdownify }}</h1>
-{{ .Content | markdownify }}
+<h1>{{ .Title }}</h1>
+{{ if .Site.Params.rendererSafe }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+{{ else }}
+  <h1>{{ .Title | markdownify }}</h1>
+  {{ .Content | markdownify }}
+{{ end}}
 
 {{ partial "footer" .}}
