@@ -2,10 +2,12 @@
 
   <h1 id="title"> {{ .Title }}</h1>
   <p>{{ .Content }}</p>
-  <ul id="list">
-    {{ range .Pages }}
-      {{ .Render "li" }}
-    {{ end }}
-  </ul>
+  {{ if not $.Params.pagesListSuppressed }}
+    <ul id="list">
+      {{ range .Pages }}
+        {{ .Render "li" }}
+      {{ end }}
+    </ul>
+  {{ end }}
 
 {{ partial "footer" .}}
