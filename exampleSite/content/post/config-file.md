@@ -41,6 +41,7 @@ pygmentsCodeFences=true
   breadcrumb = true
   accentColor = "#FD3519"
   mainSections = ['portfolio']
+  rendererSafe = true # set to true if the renderer is not marked unsafe
 
 [params.notFound]
   gopher = "/images/gopher.png"

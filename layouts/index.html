@@ -1,6 +1,11 @@
 {{ partial "header" .}}
 
-<h1>{{ .Title | markdownify }}</h1>
+{{ if .Site.Params.rendererSafe }}
+  <h1>{{ .Title }}</h1>
+{{ else }}
+  <h1>{{ .Title | markdownify }}</h1>
+{{ end}}
+
 {{ .Content }}
 
 <h2>{{ .Site.Params.main.latestPublishHeader | default "My Latest Job" }}</h2>
