@@ -1,0 +1,12 @@
+{{ partial "header" .}}
+
+<h1>{{ .Title }}</h1>
+<div class="tags">
+  {{ partial "research/tags" .}}
+</div>
+
+<img title="{{.Title}}" alt="{{.Title}}" src="/research/{{ .Params.Thumbnail }}" />
+
+{{ .Content }}
+
+{{ partial "footer" .}}
