@@ -59,6 +59,9 @@ pygmentsCodeFences=true
   instagram = "https://www.instagram.com/"
   gitlab = "https://gitlab.com/"
   keybase = "https://keybase.io/"
+  googlescholar = "https://scholar.google.com/"
+  researchgate = "https://www.researchgate.net/"
+  orcid = "https://orcid.org/"
 
 [params.contact]
   email = ""
