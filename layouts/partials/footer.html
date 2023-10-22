@@ -25,5 +25,10 @@
       }
     });
   </script>
+  {{ if $.Site.Params.copyCodeButtonEnabled }}
+    {{ if (findRE "<pre" .Content 1) }}
+      <script src="/js/copy-code-button.js"></script>
+    {{ end }}
+  {{ end }}
 </body>
 </html>

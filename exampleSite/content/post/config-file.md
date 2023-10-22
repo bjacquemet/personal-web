@@ -42,6 +42,8 @@ pygmentsCodeFences=true
   accentColor = "#FD3519"
   mainSections = ['portfolio']
   rendererSafe = true # set to true if the renderer is not marked unsafe
+  copyCodeButtonEnabled = false # set to true if copy button should be placed on top of code blocks
+
 
 [params.notFound]
   gopher = "/images/gopher.png"
